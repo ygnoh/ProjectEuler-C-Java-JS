@@ -16,9 +16,8 @@ int main()
 	int i;
 	int max = 0;
 	for (i = 2; i < (int)sqrt(target); i++)
-		if (target%i == 0 && is_prime(i))
-			if (i > max)
-				max = i;
+		if (target%i == 0 && is_prime(i) && i > max)
+			max = i;
 	printf("%d\n", max);
 }
 

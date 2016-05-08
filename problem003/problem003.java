@@ -13,9 +13,8 @@ public class problem003
 		long target = 600851475143L;
 		int max = 0;
 		for (int i = 2; i < (int)Math.sqrt(target); i++)
-			if (target%i == 0 && isPrime(i))
-				if (i > max)
-					max = i;
+			if (target%i == 0 && isPrime(i) && i > max)
+				max = i;
 		System.out.println(max);
 	}
 
