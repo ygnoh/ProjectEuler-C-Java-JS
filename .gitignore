@@ -1,3 +1,6 @@
 *.swp
 *.out
 *.class
+
+# for testing javascript
+test.html
